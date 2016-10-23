@@ -2,14 +2,12 @@
 title: API Reference
 
 language_tabs:
-  - shell
-  - ruby
-  - python
-  - javascript
+  - Objective-C
+  - Swift
+  - Java
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a>
+  - <a href='https://www.snowballsdk.com' target="_blank">Sign Up for a Developer Key</a>
 
 includes:
   - errors
@@ -17,15 +15,27 @@ includes:
 search: true
 ---
 
-# Introduction
+# Get Started
+## 1. SDK Integration Guide
+### 1. Download the SDK
+The effective size of Snowball Gaming SDK for iOS is up to ~1MB when the project iOS deployment target is 8.0 . Before you can download the Snowball SDK, make sure to add your app to the Snowball dashboard.
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+After it’s added to the Snowball dashboard, you can Download and install the SDK yourself.
+### 2. Add To Your Project
+### 3. Start Snowball Session
+### 4. Handle Incoming Links
+### 5. Get Reward For Current User
+### 6. Claim Reward For Current User
+### 7. Track In-app events
 
-We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+## 2. Snowball Links
 
-This example API documentation page was created with [Slate](https://github.com/tripit/slate). Feel free to edit it and use it as a base for your own API's documentation.
+### 1. Creating Snowball Links
+### 2. Configurating Links
 
-# Authentication
+## 3. 
+
+# User Stories
 
 > To authorize, use this code:
 
@@ -65,34 +75,27 @@ Kittn expects for the API key to be included in all API requests to the server i
 You must replace <code>meowmeowmeow</code> with your personal API key.
 </aside>
 
-# Kittens
+# API References
 
-## Get All Kittens
+## SNOWBALL Gaming Link
 
-```ruby
+```object-c
 require 'kittn'
 
 api = Kittn::APIClient.authorize!('meowmeowmeow')
 api.kittens.get
 ```
 
-```python
+```swift
 import kittn
 
 api = kittn.authorize('meowmeowmeow')
 api.kittens.get()
 ```
 
-```shell
+```JAVA
 curl "http://example.com/api/kittens"
   -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let kittens = api.kittens.get();
 ```
 
 > The above command returns JSON structured like this:

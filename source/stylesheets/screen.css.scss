@@ -68,7 +68,7 @@ html, body {
   width: $nav-width;
   background-color: $nav-bg;
   font-size: 13px;
-  font-weight: bold;
+  font-weight: 400;
 
   // language selector for mobile devices
   .lang-selector {
@@ -147,7 +147,7 @@ html, body {
 
 
   .tocify-item>a, .toc-footer li {
-    padding: 0 $nav-padding 0 $nav-padding;
+    padding: $nav-v-padding $nav-padding $nav-v-padding $nav-padding;
     display: block;
     overflow-x: hidden;
     white-space: nowrap;
